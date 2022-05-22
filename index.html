@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Red Store</title>
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!--fontawesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .banners {
+            height: 100vh;
+            background: linear-gradient(#F0E7E2, #D0D0F7);
+        }
+        
+        .texthovers:hover {
+            border-bottom: 2px solid red;
+        }
+        
+        .container {
+            width: 70%;
+        }
+        
+        h2 {
+            display: inline;
+        }
+        
+        .cardhovers {
+            transition: transform 0.2s;
+        }
+        
+        .cardhovers:hover {
+            transform: translateY(-5px);
+        }
+        
+        #products {
+            background: #f2f2f2;
+        }
+        
+        .images img {
+            width: 100px;
+            margin-top: 5px;
+            border-radius: 50%;
+            margin-left: 80px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Start Header -->
+    <header>
+        <!-- start navigation -->
+        <nav class="navbar navbar-expand-md bg-light navbar-light fixed-top">
+            <a href="index.html" class="navbar-brand ms-2">
+                <img src="./images/logo.png" alt="profile-logo" width="140px" />
+            </a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav"><i class="navbar-toggler-icon"></i></button>
+            <div id="nav" class="navbar-collapse collapse justify-content-end">
+                <ul class="navbar-nav px-2">
+                    <li class="nav-item"><a href="#home" class="nav-link text-uppercase fw-bold text-dark">home</a></li>
+                    <li class="nav-item"><a href="#products" class="nav-link text-uppercase fw-bold text-dark">products</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link text-uppercase fw-bold text-dark">about</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link text-uppercase fw-bold text-dark">contact</a></li>
+                    <li class="nav-item"><a href="#account" class="nav-link text-uppercase fw-bold text-dark">account</a></li>
+                </ul>
+                <div class="px-2">
+                    <img src="./images/cart.png" alt="cart" width="20px" />
+                </div>
+            </div>
+        </nav>
+        <!-- end navigation -->
+        <!-- start banner section -->
+        <section id="home">
+            <div class="container-fluid py-2">
+                <div class="row justify-content-center align-items-center banners">
+                    <div class="col-md-6 col-sm-12 text-center">
+                        <h4 class="text-primary text-capitalize display-6 fw-bold">give your workout a new style!</h4>
+                        <h5 class="fw-light fst-italic text-white">we help companies to your health.</h5>
+                        <p class="text-secondary lead">Properly set proceses. Transparent cooperation.Predictable delivery.</p>
+                        <a href="#" class="btn btn-outline-danger text-capitalize rounded-0">visit to site</a>
+                    </div>
+                    <div class="col-md-6 mt-3">
+                        <img src="./images/image1.png" alt="background" width="100%">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end banner section -->
+    </header>
+    <!-- End Header -->
+    <!-- start categories section -->
+    <section>
+        <div class="container mb-4">
+            <div class="row gx-0">
+                <div class="col-md-4 col-sm-10">
+                    <div class="card w-100">
+                        <img src="./images/category-1.jpg " alt="category">
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-10">
+                    <div class="card w-100">
+                        <img src="./images/category-2.jpg " alt="category">
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-10">
+                    <div class="card w-100">
+                        <img src="./images/category-3.jpg " alt="category">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end categories section -->
+    <!-- start product section -->
+    <section id="products" class="mt-3">
+        <div class="container">
+            <!-- start title -->
+            <div class="col-12 text-capitalize text-center py-4">
+                <h2 class="text-danger">featured products</h2>
+            </div>
+            <!-- end title -->
+            <div class=" row mt-4 text-capitalize">
+                <div class="col-lg-3 col-md-4 col-sm-10 mx-auto mb-4 ">
+                    <div class="card cardhovers ">
+                        <img src="./images/product-1.jpg " alt="product">
+                        <div class="card-body ">
+                            <div class="card-title ">red painted t-shirt</div>
+                            <div>
+                                <i class="fas fa-star text-warning "></i>
+                                <i class="fas fa-star text-warning "></i>
+                                <i class="fas fa-star text-warning "></i>
+                                <i class="fas fa-star text-warning "></i>
+                            </div>
+                            <p>$50.00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-10 mx-auto mb-4 ">
+                    <div class="card cardhovers ">
+                        <img src="./images/product-2.jpg " alt="product ">
+                        <div class="card-body ">
+                            <div class="card-title ">red painted t-shirt</div>
+                            <div>
+                                <i class="fas fa-star text-warning "></i>
+                                <i class="fas fa-star text-warning "></i>
+                                <i class="fas fa-star text-warning "></i>
+                                <i class="fas fa-star-half text-warning "></i>
+                            </div>
+                            <p>$100.00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-10 mx-auto mb-4 ">
+                    <div class="card cardhovers ">
+                        <img src="./images/product-3.jpg " alt="product ">
+                        <div class="card-body ">
+                            <div class="card-title ">red painted t-shirt</div>
+                            <div>
+                                <i class="fas fa-star text-warning "></i>
+                                <i class="fas fa-star text-warning "></i>
+                                <i class="fas fa-star-half text-warning "></i>
+                                <i class="fas fa-star-half text-warning "></i>
+                            </div>
+                            <p>$50.00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-10 mx-auto mb-4 ">
+                    <div class="card cardhovers ">
+                        <img src="./images/product-4.jpg " alt="product ">
+                        <div class="card-body ">
+                            <div class="card-title ">red painted t-shirt</div>
+                            <div>
+                                <i class="fas fa-star text-warning "></i>
+                                <i class="fas fa-star text-warning "></i>
+                                <i class="fas fa-star text-warning "></i>
+                                <i class="fas fa-star-half text-warning "></i>
+                            </div>
+                            <p>$53.00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4 text-capitalize">
+                <div class="col-lg-3 col-md-4 col-sm-10 mx-auto mb-4 ">
+                    <div class="card cardhovers ">
+                        <img src="./images/product-5.jpg " alt="product ">
+                        <div class="card-body ">
+                            <div class="card-title ">red painted t-shirt</div>
+                            <div>
+                                <i class="fas fa-star text-success "></i>
+                                <i class="fas fa-star text-success "></i>
+                                <i class="fas fa-star text-success "></i>
+                                <i class="fas fa-star-half text-success "></i>
+                            </div>
+                            <p>$20.00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-10 mx-auto mb-4 ">
+                    <div class="card cardhovers ">
+                        <img src="./images/product-6.jpg " alt="product ">
+                        <div class="card-body ">
+                            <div class="card-title ">red painted t-shirt</div>
+                            <div>
+                                <i class="fas fa-star text-success "></i>
+                                <i class="fas fa-star text-success "></i>
+                                <i class="fas fa-star text-success "></i>
+                                <i class="fas fa-star text-success "></i>
+                            </div>
+                            <p>$90.00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-10 mx-auto mb-4 ">
+                    <div class="card cardhovers ">
+                        <img src="./images/product-7.jpg " alt="product ">
+                        <div class="card-body ">
+                            <div class="card-title ">red painted t-shirt</div>
+                            <div>
+                                <i class="fas fa-star text-success "></i>
+                                <i class="fas fa-star-half text-success "></i>
+                                <i class="fas fa-star-half text-success "></i>
+                                <i class="fas fa-star-half text-success "></i>
+                            </div>
+                            <p>$150.00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-10 mx-auto mb-4 ">
+                    <div class="card cardhovers ">
+                        <img src="./images/product-8.jpg " alt="product ">
+                        <div class="card-body ">
+                            <div class="card-title ">red painted t-shirt</div>
+                            <div>
+                                <i class="fas fa-star text-success "></i>
+                                <i class="fas fa-star text-success "></i>
+                                <i class="fas fa-star-half text-success "></i>
+                                <i class="fas fa-star-half text-success "></i>
+                            </div>
+                            <p>$50.00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4 text-capitalize">
+                <div class="col-lg-3 col-md-4 col-sm-10 mx-auto mb-4 ">
+                    <div class="card cardhovers ">
+                        <img src="./images/product-9.jpg " alt="product ">
+                        <div class="card-body ">
+                            <div class="card-title ">red painted t-shirt</div>
+                            <div>
+                                <i class="fas fa-star text-danger "></i>
+                                <i class="fas fa-star text-danger "></i>
+                                <i class="fas fa-star text-danger "></i>
+                                <i class="fas fa-star-half text-danger "></i>
+                            </div>
+                            <p>$20.00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-10 mx-auto mb-4 ">
+                    <div class="card cardhovers ">
+                        <img src="./images/product-10.jpg " alt="product ">
+                        <div class="card-body ">
+                            <div class="card-title ">red painted t-shirt</div>
+                            <div>
+                                <i class="fas fa-star text-danger "></i>
+                                <i class="fas fa-star text-danger "></i>
+                                <i class="fas fa-star text-danger "></i>
+                                <i class="fas fa-star text-danger "></i>
+                            </div>
+                            <p>$90.00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-10 mx-auto mb-4 ">
+                    <div class="card cardhovers ">
+                        <img src="./images/product-11.jpg " alt="product ">
+                        <div class="card-body ">
+                            <div class="card-title ">red painted t-shirt</div>
+                            <div>
+                                <i class="fas fa-star text-danger "></i>
+                                <i class="fas fa-star-half text-danger "></i>
+                                <i class="fas fa-star-half text-danger "></i>
+                                <i class="fas fa-star-half text-danger "></i>
+                            </div>
+                            <p>$150.00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-10 mx-auto mb-4 ">
+                    <div class="card cardhovers ">
+                        <img src="./images/product-12.jpg " alt="product ">
+                        <div class="card-body ">
+                            <div class="card-title ">red painted t-shirt</div>
+                            <div>
+                                <i class="fas fa-star text-danger"></i>
+                                <i class="fas fa-star text-danger "></i>
+                                <i class="fas fa-star-half text-danger "></i>
+                                <i class="fas fa-star-half text-danger"></i>
+                            </div>
+                            <p>$50.00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end product section -->
+    <section>
+        <div class="container-fluid">
+            <div class="row justify-content-center align-items-center p-4" style="height: 90vh;background: linear-gradient(#F0E7E2, #D0D0F7);">
+                <div class="col-md-5 col-sm-10">
+                    <img src="./images/exclusive.png" class="ms-4" alt="exclusive" width="400px">
+                </div>
+                <div class="col-md-7 col-sm-10 text-capitalize">
+                    <h2 class="fw-bold display-6">smart band 4</h2>
+                    <p class="text-secondary">exclusively avaliable on redstore.</p>
+                    <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- start comments section -->
+    <section>
+        <div class="container py-2">
+            <div class="row align-items-center text-center">
+                <div class="col-md-4 mb-4 images p-4">
+                    <div class="card cardhovers">
+                        <div class="card-body">
+                            <i class="fas fa-quote-left text-danger"></i>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                            <div>
+                                <i class="fas fa-star text-danger "></i>
+                                <i class="fas fa-star text-danger "></i>
+                                <i class="fas fa-star text-danger "></i>
+                                <i class="fas fa-star text-danger "></i>
+                            </div>
+                        </div>
+                        <img src="./images/user-1.png" alt="user-1">
+                        <h4 class="p-2">Sean Parker</h4>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4 images p-4">
+                    <div class="card cardhovers">
+                        <div class="card-body">
+                            <i class="fas fa-quote-left text-danger"></i>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                            <div>
+                                <i class="fas fa-star text-danger "></i>
+                                <i class="fas fa-star text-danger "></i>
+                                <i class="fas fa-star text-danger "></i>
+                                <i class="fas fa-star text-danger "></i>
+                            </div>
+                        </div>
+                        <img src="./images/user-2.png" alt="user-1">
+                        <h4 class="p-2">Mike Smith</h4>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4 images p-4">
+                    <div class="card cardhovers">
+                        <div class="card-body">
+                            <i class="fas fa-quote-left text-danger"></i>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                            <div>
+                                <i class="fas fa-star text-danger "></i>
+                                <i class="fas fa-star text-danger "></i>
+                                <i class="fas fa-star text-danger "></i>
+                                <i class="fas fa-star text-danger "></i>
+                            </div>
+                        </div>
+                        <img src="./images/user-3.png" alt="user-1">
+                        <h4 class="p-2">Mabel Joe</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end comments section -->
+    <!-- start footer -->
+    <footer class="bg-dark">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-md-3 col-sm-6 text-capitalize py-4">
+                <div class="ms-3">
+                    <h5 class="text-light">download our app</h5>
+                    <p class="text-muted">download app for andriod and ios mobile phone.</p>
+                    <div>
+                        <img src="./images/play-store.png" alt="" width="100px">
+                        <img src="./images/app-store.png" alt="" width="100px">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 text-capitalize py-4">
+                <div class="ms-3">
+                    <img src="./images/logo-white.png" alt="" width="150px">
+                </div>
+                <p class="mt-3 text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum atque</p>
+            </div>
+            <div class="col-md-3 col-sm-6 text-capitalize py-4">
+                <div class="ms-3">
+                    <h5 class="text-light">useful links</h5>
+                    <p class="text-muted">coupons</p>
+                    <p class="text-muted">blog posts</p>
+                    <p class="text-muted">return policy</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 text-capitalize py-4">
+                <div class="ms-3">
+                    <h5 class="text-light">follows up</h5>
+                    <p><a href="#" class="fw-bold text-muted">facebook</a></p>
+                    <p><a href="#" class="fw-bold text-muted">twitter</a></p>
+                    <p><a href="#" class="fw-bold text-muted">instagram</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer -->
+
+
+
+
+
+    <!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js " integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js " integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13 " crossorigin="anonymous "></script>
+</body>
+
+</html>
